@@ -1,45 +1,89 @@
 html {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(225, 224, 218);
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  text-shadow: 1px 2px 1px rgb(195, 196, 195);
+  align-items: flex-start;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: rgb(45, 46, 44);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-image: url(/Images/weather-app-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
 }
 
-
 .card {
-    width: clamp(150px, 50%, 320px);
-    background-color: rgb(195, 206, 198);
-    padding: 2.1rem;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px rgb(45, 46, 44);
+  width: clamp(150px, 50%, 320px);
+  background-color: rgb(195, 206, 198);
+  padding: 2.1rem;
+  border-radius: 8px;
+  background-color: rgba(51, 55, 57, 0.8);
+  box-shadow: 1px 1px 2px rgb(45, 46, 44);
+}
+
+label {
+  display: block;
+  margin: 0.5rem auto;
+  font-size: 1.35rem;
+  color: rgb(229, 238, 235);
 }
 
 input {
-    width: 75%;
-    height: 2rem;
-    border-radius: 6px;
-    border: 2px solid rgb(195, 206, 198);
-}
-.search-btn {
-            width: 3rem;
-            height: auto;
-            border: none;
-            padding: 0.4rem;
-            border-radius: 6px;
-}
-#search-icon {
-      width: 16px;
-      height: 9px;
+  width: 75%;
+  height: 2.2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: none;
+  padding: 0.25rem;
 }
 
+input:focus {
+  color: rgb(51, 55, 57);
+  border: 3px solid rgb(193, 234, 249);
+  background-color: rgb(218, 236, 239);
+}
+
+.search-btn {
+  width: 3rem;
+  height: 2.76rem;
+  border: none;
+  margin-left: 0.25rem;
+  background-color: rgb(66, 64, 64);
+  border-radius: 6px;
+  transition: background-color 0.5s ease-in-out;
+}
+.search-btn:hover {
+  cursor: pointer;
+  background-color: rgb(189, 240, 127);
+  #search-icon {
+    color: rgb(45, 46, 44);
+  }
+}
+
+#search-icon {
+  color: rgb(225, 224, 228);
+  width: 1.5rem;
+  height: 1.25rem;
+}
+
+.weather-info > * {
+  margin-block: 0.5em;
+  color: white;
+}
 .temp {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
