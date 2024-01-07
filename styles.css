@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-image: url(/Images/weather-app-bg.jpg);
+  background-image: url(Images/weather-app-bg.jpg);
   background-position: center;
   background-size: cover;
   object-fit: cover;
