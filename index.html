@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link href="styles.css" rel="stylesheet" />
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <title>Real-Time Weather LiveFlow</title>
   </head>
   <body>
@@ -37,12 +37,19 @@
         </button>
       </section>
       <section class="weather-info">
-        <h2 class="city">Weather in Bengaluru</h2>
-        <div class="temp">51&deg;C</div>
-        <img src="" alt="" class="icon" />
-        <div class="description">Cloudy</div>
-        <div class="humidity">Humidity: 60%</div>
-        <div class="wind-speed">Wind Speed: 6.1 Km/Hr</div>
+        <h2 class="city">Manipal</h2>
+        <div class="temp">29&deg;C</div>
+
+        <div class="weather-state">
+          <img
+            src="https://openweathermap.org/img/wn/04n@2x.png"
+            alt="weather-state-image"
+            class="icon"
+          />
+          <div class="description">cloudy</div>
+        </div>
+        <div class="humidity">Humidity : 60%</div>
+        <div class="wind-speed">Wind Speed : 6.1 Km/Hr</div>
       </section>
     </div>
   </body>
