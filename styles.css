@@ -4,12 +4,14 @@ html {
 }
 
 h1 {
-  color: rgb(225, 224, 218);
-  font-size: 3.2rem;
+  color: rgb(234, 236, 232);
+  text-align: center;
+  align-items: center;
+  font-size: 3.45rem;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  margin-bottom: 2.5rem;
-  text-shadow: 1px 2px 1px rgb(195, 196, 195);
-  align-items: flex-start;
+  margin-block: 2.5rem;
+  text-shadow: 2px 1px 2px rgb(246, 250, 246);
 }
 
 body {
@@ -26,40 +28,35 @@ body {
 }
 
 .card {
-  width: clamp(150px, 50%, 320px);
+  width: clamp(250px, 50%, 320px);
   background-color: rgb(195, 206, 198);
   padding: 2.1rem;
+  margin: 2.5rem auto;
   border-radius: 8px;
   background-color: rgba(51, 55, 57, 0.8);
   box-shadow: 1px 1px 2px rgb(45, 46, 44);
 }
 
-label {
-  display: block;
-  margin: 0.5rem auto;
-  font-size: 1.35rem;
-  color: rgb(229, 238, 235);
-}
-
 input {
   width: 75%;
+  color: rgb(51, 54, 53);
   height: 2.2rem;
   font-size: 1.2rem;
   border-radius: 8px;
   margin-bottom: 1rem;
   border: none;
-  padding: 0.25rem;
+  padding: 0.36rem;
 }
 
 input:focus {
-  color: rgb(51, 55, 57);
-  border: 3px solid rgb(193, 234, 249);
-  background-color: rgb(218, 236, 239);
+  /* color: rgb(51, 54, 53); */
+  border: 3px solid rgb(215, 254, 230);
+  background-color: rgb(224, 250, 229);
 }
 
 .search-btn {
   width: 3rem;
-  height: 2.76rem;
+  height: 2.8rem;
   border: none;
   margin-left: 0.25rem;
   background-color: rgb(66, 64, 64);
@@ -86,4 +83,10 @@ input:focus {
 }
 .temp {
   font-size: 2.5rem;
+}
+
+@media (max-width: 524px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
